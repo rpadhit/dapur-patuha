@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  position: relative;
+  background-image: url(img/bg.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+section {
+  display: grid;
+  place-items: center;
+  position: absolute;
+  inset: 0;
+}
+
+section main {
+  padding: 100px 10px;
+  /* background-color: rebeccapurple; */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  max-width: 600px;
+  justify-content: center;
+  align-items: center;
+}
+
+section main img {
+  width: 200px;
+  aspect-ratio: 1;
+
+  /* untuk kasih efek glow */
+  /* border-radius: 50%;
+  box-shadow: 0 0 5px 1px burlywood; */
+}
+
+section main h2 {
+  font-family: "Fugaz One", sans-serif;
+  font-style: normal;
+  font-size: 2em;
+  font-weight: 600;
+  color: white;
+  text-shadow: 0 2 rgba(0, 0, 0, 1);
+}
+
+section main a {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  border: 1.5px solid rgb(255, 255, 255);
+  background-color: rgba(62, 62, 62, 0.6);
+  color: white;
+  font-weight: 600;
+  border-radius: 10px;
+  padding: 10px;
+  gap: 20px;
+  transition: 0.3s;
+}
+
+section main a:hover:nth-child(odd) {
+  background-color: blue;
+  color: white;
+  border: none;
+}
+
+section main a:hover:nth-child(even) {
+  background-color: yellow;
+  color: blue;
+  border: none;
+}
+
+section main a i {
+  font-size: 1.3em;
+}
+
+section footer p {
+  color: white;
+  font-size: 0.85em;
+}
