@@ -7,7 +7,7 @@
 body {
   height: 100vh;
   position: relative;
-  background-image: url(img/bg.jpg);
+  background-image: url(img/bg.png);
   background-size: cover;
   background-position: center;
 }
@@ -45,9 +45,26 @@ section main h2 {
   font-style: normal;
   font-size: 2em;
   font-weight: 600;
-  color: white;
-  text-shadow: 0 2 rgba(0, 0, 0, 1);
+  color: #fefefe;
+  text-shadow: 0px 0px 1px transparent, 0px 2px rgba(0, 0, 0, 0.8);
+  text-align: center;
 }
+
+/* section main a {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  border: 1.5px solid #fefefe;
+  background-color: rgba(211, 166, 123, 0.65);
+  color: #fefefe;
+  font-weight: 600;
+  border-radius: 10px;
+  padding: 10px;
+  gap: 20px;
+  transition: 0.3s;
+} */
 
 section main a {
   display: flex;
@@ -55,9 +72,6 @@ section main a {
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  border: 1.5px solid rgb(255, 255, 255);
-  background-color: rgba(62, 62, 62, 0.6);
-  color: white;
   font-weight: 600;
   border-radius: 10px;
   padding: 10px;
@@ -65,15 +79,27 @@ section main a {
   transition: 0.3s;
 }
 
+section main a:nth-child(odd) {
+  border: 1.5px solid #fefefe;
+  background-color: rgba(1, 67, 151, 0.8);
+  color: #fefefe;
+}
+
+section main a:nth-child(even) {
+  border: 1.5px solid #fefefe;
+  background-color: rgb(251, 213, 24, 0.8);
+  color: rgb(1, 67, 151, 0.8);
+}
+
 section main a:hover:nth-child(odd) {
-  background-color: blue;
-  color: white;
+  background-color: #014397;
+  color: #fefefe;
   border: none;
 }
 
 section main a:hover:nth-child(even) {
-  background-color: yellow;
-  color: blue;
+  background-color: #fbd518;
+  color: #014397;
   border: none;
 }
 
@@ -82,6 +108,7 @@ section main a i {
 }
 
 section footer p {
-  color: white;
+  color: #fefefe;
   font-size: 0.85em;
+  text-shadow: 0px 0px 1px transparent, 0px 2px rgba(0, 0, 0, 0.8);
 }
